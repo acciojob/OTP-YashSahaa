@@ -11,12 +11,13 @@
 .para{
 	width: 400px;
 	margin: auto;
-	background-color: burlywood;
+	background-color: #eaeaea;
 	padding: 1px;
 	border-radius: 5px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 #code-container{
 	display: flex;
 	justify-content: center;
@@ -31,4 +32,10 @@
 	align-items: center;
 	justify-content: center;
 	font-size: 50px;
+	color:#757575;
+	border:1px solid #eaeaea;
+}
+.focused{
+	border:2px solid cyan;
+	background-color:lightcyan;
 }
