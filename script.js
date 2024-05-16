@@ -19,12 +19,15 @@ for(let i=0;i<inputs.length;i++){
                 inputs[i-1].focus()
             }
         }
-        if(events.key.charCodeAt(0)>47 && events.key.charCodeAt(0)<58){
+        else if(events.key.charCodeAt(0)>47 && events.key.charCodeAt(0)<58){
             if(i<inputs.length-1){
                 inputs[i].removeAttribute("autofocus")
                 inputs[i+1].setAttribute("placeholder","")
                 inputs[i+1].focus()
             }
         }
+		else{
+			inputs[i].value=""
+		}
     })
 }
