@@ -14,14 +14,14 @@ for(let i=0;i<inputs.length;i++){
 
         if(events.key==="Backspace" && inputs[i].value==""){
             if(i>0){
-                inputs[i].removeAttribute("autofocus")
+                inputs[i].setAttribute("focused","")
                 inputs[i-1].setAttribute("placeholder","")
                 inputs[i-1].focus()
             }
         }
         else if(events.key.charCodeAt(0)>47 && events.key.charCodeAt(0)<58){
             if(i<inputs.length-1){
-                inputs[i].removeAttribute("autofocus")
+                //vinputs[i].removeAttribute("autofocus")
                 inputs[i+1].setAttribute("placeholder","")
                 inputs[i+1].focus()
             }
